@@ -50,6 +50,7 @@ class Sender:
 
         self.args=self.parser.parse_args()
 
+    #Function called for use in commandLine
     def build(self):
         mailto = self.default['sendtodef']
         subject='Sent by sendMail Script'
@@ -70,7 +71,7 @@ class Sender:
         for address in mailto:
             self.send(self.default['sendfrom'], address, subject, body)
 
-
+    #Function to send strings
     def send(self, mailfrom, mailto, subject, string):
         try:
             msg=MIMEText(string)
