@@ -3,7 +3,7 @@
 Python script for sending emails with string or file using an smtp server of your choice
 ## Usage 
 
-A Config file named config.conf must be present with the following format:
+A Config file named sendMail.conf must be present with the following format:
 ```
 [DEFAULT]
 server : smtp.gmail.com
